@@ -1,0 +1,33 @@
+<mappings xmlns="http://dozer.sourceforge.net"
+		  xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<configuration>
+		<stop-on-errors>true</stop-on-errors>
+		<date-format>MM/dd/yyyy HH:mm</date-format>
+		<wildcard>false</wildcard>		
+	</configuration>
+        <!-- <a is-accessible="true"></a> -->
+        
+        <mapping map-null="false">
+		<class-a>rms.bean_a.RootNode</class-a>
+		<class-b>rms.bean_b.RootNode</class-b>
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+                <field>
+			<a>ListOfElements</a>
+			<b>listwrapper.containedlist</b>
+                        <!--<b>listwrapper</b>-->
+		</field>		
+	</mapping>
+        
+        <mapping map-null="false">
+		<class-a>rms.bean_a.ListElement</class-a>
+		<class-b>rms.bean_b.ListElement</class-b>
+		<field>
+			<a>element</a>
+			<b>element</b>
+		</field>                
+	</mapping>
+</mappings>

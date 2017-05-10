@@ -1,0 +1,6 @@
+nbactions.xml
+._.DS_Store
+.DS_Store
+/build
+/target
+/.vscode
